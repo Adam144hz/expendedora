@@ -128,6 +128,7 @@ public class expendedora{
             nom = sc.nextLine();
             System.out.println("Preu?");
             preu = sc.nextDouble();
+            sc.nextLine();
             System.out.println("Stock Inicial: ");
             stock = sc.nextInt();
             sc.nextLine();
@@ -200,6 +201,7 @@ public class expendedora{
                             nom = sc.nextLine();
                             System.out.println("Preu?");
                             preu = sc.nextDouble();
+                            sc.nextLine();
                             System.out.println("Stock Inicial: ");
                             stock = sc.nextInt();
                             sc.nextLine();
