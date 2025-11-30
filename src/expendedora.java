@@ -3,44 +3,40 @@ public class expendedora{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         //Provisional !!
-        System.out.println("Registre d'usuaris ");
-
-        int mes = 9;
+        System.out.println("⌜ \uD835\uDE4D\uD835\uDE5A\uD835\uDE5C\uD835\uDE5E\uD835\uDE68\uD835\uDE69\uD835\uDE67\uD835\uDE5A \uD835\uDE59'\uD835\uDE6A\uD835\uDE68\uD835\uDE6A\uD835\uDE56\uD835\uDE67\uD835\uDE5E\uD835\uDE68 \uD83D\uDCDD" + " ⌟");
         String primernom;
         String segonom;
-        boolean valid = false;
-        String extra;
-        String pass;
+        String pass = "";
         String segonapass;
-        String extrapass;
         boolean logedin = false;
+        boolean valid = false;
         boolean registre = false;
         boolean podemseguir = false;
+        boolean tedigit = false;
+        boolean tesimbol = false;
+        boolean tedigit_u = false;
+        boolean tesimbol_u = false;
         int opcio = 8;
         int suma_1 = 0;
         int suma_2 = 0;
         int suma_3 = 0;
         int suma_4 = 0;
+        int mes = 9;
+        int llargariapassu = 0;
+        int llargariapassdos = 0;
         do {
-
-
-            System.out.println("Introdueix el primer usuari que vols registrar");
+            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC29\uD835\uDC2B\uD835\uDC22\uD835\uDC26\uD835\uDC1E\uD835\uDC2B \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 :");
             primernom = sc.nextLine();
-            System.out.println("Introdueix la contrassenya (ha de contenir com a mínim 4 carácters entre els quals hi ha d'haver un digit i un simbol");
+            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
             pass = sc.nextLine();
-            System.out.println("Introdueix el segon usuari que vols registrar");
+            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC2C\uD835\uDC1E\uD835\uDC20\uD835\uDC28\uD835\uDC27 \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 : ");
             segonom = sc.nextLine();
-            System.out.println("Introdueix la contrassenya (ha de contenir com a mínim 4 carácters entre els quals hi ha d'haver un digit i un simbol ");
+            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
             segonapass = sc.nextLine();
 
-
-            int llargariapassu = pass.length();
-            int llargariapassdos = segonapass.length();
-            if ((primernom.equals("admin") || segonom.equals("admin"))) {
-                boolean tedigit = false;
-                boolean tesimbol = false;
-                boolean tedigit_u = false;
-                boolean tesimbol_u = false;
+            llargariapassu = pass.length();
+            llargariapassdos = segonapass.length();
+            if ((primernom.equalsIgnoreCase("admin") || segonom.equalsIgnoreCase("admin"))) {
                 for (int cont = 0; cont < pass.length(); cont++) {
                     char c = pass.charAt(cont);
                     if (Character.isDigit(c)) {
@@ -64,75 +60,80 @@ public class expendedora{
                 if (tedigit && tedigit_u && tesimbol && tesimbol_u && llargariapassu >= 4 && llargariapassdos >= 4) {
                     registre = true;
                     valid = true;
-                    System.out.println("Vols introduir mes? (0, no, 1 si)");
-                    mes = sc.nextInt();
-                    if (mes == 1) {
-                        do {
-                            System.out.println("usuari?: ");
-                            extra = sc.nextLine();
-                            System.out.println("Contrassenya: ");
-                            extrapass = sc.nextLine();
-                        } while ((!extra.equals("stop")));
-                    } else {
-                        podemseguir = true;
-                    }
-
-
+                    podemseguir = true;
                 } else{
-                    System.out.println("Falten simbols o digits");
+                    System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ᴏ ᴅɪɢɪᴛs ❗");
                 }
 
             }else{
-            System.out.println("Un dels usuaris ha de ser admin");
+            System.out.println("ᴜɴ ᴅᴇʟs ᴜsᴜᴀʀɪs ʜᴀ ᴅᴇ sᴇʀ ᴀᴅᴍɪɴ ❗");
         }
 
 
         }while(!valid) ;
-
+        boolean userpremium = false;
         String nomlog;
         String passlog;
+        String nomdefi = "a";
         if(podemseguir){
             int i=3;
-            sc.nextLine();
+            String nom3 = "";
+            String extrapass = "";
             while(!logedin && i>0) {
-                System.out.println("(LogIn) Tens " + i + " " + "intents");
-                System.out.println("(LogIn) Introdueix el nom: ");
+                System.out.println("⌜ \uD835\uDE47\uD835\uDE64\uD835\uDE5C\uD835\uDE44\uD835\uDE63 \uD83D\uDE80 ⌟");
+                System.out.println("\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE34 " + i + " " + "\uD835\uDE2A\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE34");
+                System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC27\uD835\uDC28\uD835\uDC26: ");
                 nomlog = sc.nextLine();
-                System.out.println("(LogIn) Introdueix la contrassenya: ");
+                System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A: ");
                 passlog = sc.nextLine();
-                if (nomlog.equals(primernom) && passlog.equals(pass) || nomlog.equals(segonom) && passlog.equals(segonapass)) {
+                if ((nomlog.equalsIgnoreCase(primernom) && passlog.equals(pass)) || (nomlog.equalsIgnoreCase(segonom) && passlog.equals(segonapass)) || (nomlog.equalsIgnoreCase(nom3) && passlog.equals(extrapass))) {
                     logedin = true;
+                    if(nomlog.equals("admin")){
+                        userpremium = true;
+                    }else{
+                        nomdefi = nomlog;
+                    }
                     break;
                 }
                 i--;
             }
             if(i==0){
-                System.out.println("Has superat el número máxim d'intents");
+                System.out.println("ʜᴀs sᴜᴘᴇʀᴀᴛ ᴇʟ ɴᴜᴍᴇʀᴏ ᴍᴀxɪᴍ ᴅ'ɪɴᴛᴇɴᴛs ❗ ");
             }
         }
         boolean hadesernum = false;
         if(logedin){
-            //hacer menú en condiciones
-
+            System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68 \uD83C\uDFF7\uFE0F ⌟");
+            if(userpremium){
+                System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
+                        "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+            }else{
+                System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: " + nomdefi + "" + " \uD83D\uDC64" + "\n" +
+                        "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+            }
+            //hacer interfaz en condiciones
             String nomp_1 = "", nomp_2 = "", nomp_3 = "", nomp_4 = "";
             double preu_1 = 0, preu_2 = 0, preu_3 = 0, preu_4 = 0;
             int stock_1 = 0, stock_2 = 0, stock_3 = 0, stock_4 = 0;
             String nom = "";
+            boolean almenys = false;
             double preu = 0;
             int stock = 0;
             String codipro_1 = "", codipro_2 = "", codipro_3 = "", codipro_4 = "";
             for(int i = 1; i <=4; i++){
-
-            System.out.println("Producte " + i + " " + "(P" + i + ")");
-            System.out.println("Nom?: ");
+            System.out.println("ᕈɾoᑯᥙᥴtᥱ " + i + " " + "(ᕈ" + i + ") \uD83D\uDCE6");
+            System.out.println("ᙁoຕ: ");
             nom = sc.nextLine();
-            System.out.println("Preu?");
+            System.out.println("ᕈɾᥱᥙ \uD83D\uDCB2:");
             preu = sc.nextDouble();
             sc.nextLine();
-            System.out.println("Stock Inicial: ");
+            System.out.println("ᔑtoᥴƙ ꙆᥒɩᥴɩᥲꙆ \uD83D\uDCCB: ");
             stock = sc.nextInt();
-            sc.nextLine();
 
+            sc.nextLine();
+            if(i<4) {
+                System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C\uD835\uDE6A\uD835\uDE67\uD835\uDE56\uD835\uDE63\uD835\uDE69. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68... ⚙\uFE0F ⌟");
+            }
                 switch (i){
                     case 1:
                         nomp_1 = nom;
@@ -166,45 +167,63 @@ public class expendedora{
             }
 
         double totalrecap = 0;
+            boolean confirmacio = true;
             do{
-                System.out.println("(Menú Principal) Tria una de les següents opcions: ");
-                System.out.println("1. Configurar Productes \n" +
-                               "2. Comprar productes \n" +
-                               "3. Reomplir stock \n" +
-                               "4. Informe de vendes i recaptació \n" +
-                               "5. Sortir del programa");
+                System.out.println("⌜ \uD835\uDE48\uD835\uDE40\uD835\uDE49\uD835\uDE50 \uD835\uDE4B\uD835\uDE4D\uD835\uDE44\uD835\uDE49\uD835\uDE3E\uD835\uDE44\uD835\uDE4B\uD835\uDE3C\uD835\uDE47 \uD83D\uDCDC ⌟");
+                if(userpremium){
+                    System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
+                            "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+                }else{
+                    System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: " + nomdefi + "" + " \uD83D\uDC64" + "\n" +
+                            "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+                }
+                //hacer menú en condiciones
+                System.out.println("\uD835\uDFCF. \uD835\uDC02\uD835\uDC28\uD835\uDC27\uD835\uDC1F\uD835\uDC22\uD835\uDC20\uD835\uDC2E\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD835\uDC0F\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1C\uD835\uDC2D\uD835\uDC1E\uD835\uDC2C \uD83C\uDFF7\uFE0F \n" +
+                               "\uD835\uDFD0. \uD835\uDC02\uD835\uDC28\uD835\uDC26\uD835\uDC29\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD835\uDC29\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1C\uD835\uDC2D\uD835\uDC1E\uD835\uDC2C \uD83D\uDED2 \n" +
+                               "\uD835\uDFD1. \uD835\uDC11\uD835\uDC1E\uD835\uDC28\uD835\uDC26\uD835\uDC29\uD835\uDC25\uD835\uDC22\uD835\uDC2B \uD835\uDC12\uD835\uDC2D\uD835\uDC28\uD835\uDC1C\uD835\uDC24 \uD83D\uDCE5 \n" +
+                               "\uD835\uDFD2. \uD835\uDC08\uD835\uDC27\uD835\uDC1F\uD835\uDC28\uD835\uDC2B\uD835\uDC26\uD835\uDC1E \uD835\uDC1D\uD835\uDC1E \uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC1D\uD835\uDC1E\uD835\uDC2C \uD835\uDC22 \uD835\uDC2B\uD835\uDC1E\uD835\uDC1C\uD835\uDC1A\uD835\uDC29\uD835\uDC2D\uD835\uDC1A\uD835\uDC1C\uD835\uDC22\uD835\uDC28 \uD83D\uDCCA \n" +
+                               "\uD835\uDFD3. \uD835\uDC12\uD835\uDC28\uD835\uDC2B\uD835\uDC2D\uD835\uDC22\uD835\uDC2B \uD835\uDC1D\uD835\uDC1E\uD835\uDC25 \uD835\uDC29\uD835\uDC2B\uD835\uDC28\uD835\uDC20\uD835\uDC2B\uD835\uDC1A\uD835\uDC26\uD835\uDC1A ➜]");
                 if(sc.hasNextInt()){
                  opcio = sc.nextInt();
                  sc.nextLine();
                  hadesernum = true;
                  }else{
-                    System.out.println("Has d'intorduir un nombre enter com a opció");
+                    System.out.println("ʜᴀs ᴅ'ɪɴᴛᴏʀᴅᴜɪʀ ᴜɴ ɴᴏᴍʙʀᴇ ᴇɴᴛᴇʀ ᴄᴏᴍ ᴀ ᴏᴘᴄɪᴏ...❗");
                     sc.nextLine();
                     hadesernum=false;
                 }
 
 
-             if(hadesernum){
+                if(hadesernum){
                  String codipro = "";
                  boolean continuar = true;
                  int quant = 0;
                  double comprat = 0;
                  String volscont = "";
-
-                switch (opcio){
+                 switch (opcio){
                     case 1:
-                        sc.nextLine();
+                        almenys=true;
+                        if(userpremium){
+                            System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
+                                    "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+                        }else{
+                            System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: " + nomdefi + "" + " \uD83D\uDC64" + "\n" +
+                                    "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+                        }
                         for(int i = 1; i <=4; i++){
-
-                            System.out.println("Producte " + i + " " + "(P" + i + ")");
-                            System.out.println("Nom?: ");
+                            System.out.println("ᕈɾoᑯᥙᥴtᥱ " + i + " " + "(ᕈ" + i + ") \uD83D\uDCE6");
+                            System.out.println("ᙁoຕ: ");
                             nom = sc.nextLine();
-                            System.out.println("Preu?");
+                            System.out.println("ᕈɾᥱᥙ \uD83D\uDCB2:");
                             preu = sc.nextDouble();
                             sc.nextLine();
-                            System.out.println("Stock Inicial: ");
+                            System.out.println("ᔑtoᥴƙ ꙆᥒɩᥴɩᥲꙆ \uD83D\uDCCB: ");
                             stock = sc.nextInt();
+
                             sc.nextLine();
+                            if(i<4) {
+                                System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C\uD835\uDE6A\uD835\uDE67\uD835\uDE56\uD835\uDE63\uD835\uDE69. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68... ⚙\uFE0F ⌟");
+                            }
                             switch (i){
                                 case 1:
                                     nomp_1 = nom;
@@ -229,74 +248,79 @@ public class expendedora{
                             }
                         }
                         break;
-                    case 2:
-                        sc.nextLine();
-                        do {
-                            System.out.println("Introdueix el codi de producte");
-                            codipro = sc.nextLine();
 
+                    case 2:
+                        if(almenys) {
+                            System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE62\uD835\uDE65\uD835\uDE67\uD835\uDE56\uD835\uDE67 \uD835\uDE65\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68 \uD83D\uDED2 ⌟");
+                            if (userpremium) {
+                                System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
+                                        "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+                            } else {
+                                System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: " + nomdefi + "" + " \uD83D\uDC64" + "\n" +
+                                        "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
+                            }
+                            do {
+                                System.out.println("Ꙇᥒtɾoᑯᥙᥱɩx ᥱꙆ ᥴoᑯɩ ᑯᥱ ρɾoᑯᥙᥴtᥱ \uD83E\uDDD1\u200D\uD83D\uDCBB: ");
+                                codipro = sc.nextLine();
                                 if (codipro.equals("P1")) {
                                     do {
-                                        System.out.println("Quants en vols comprar? ");
+                                        System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
-                                        sc.nextLine();
                                         if (quant > stock_1) {
-                                            System.out.println("No en queden tants, torna-ho a intentar");
+                                            System.out.println("ɴᴏ ᴇɴ ǫᴜᴇᴅᴇɴ ᴛᴀɴᴛs, ᴛᴏʀɴᴀ-ʜᴏ ᴀ ɪɴᴛᴇɴᴛᴀʀ ❗");
                                         }
                                     } while (quant > stock_1);
-                                    suma_1 = suma_1+quant;
+                                    suma_1 = suma_1 + quant;
                                     comprat = quant * preu_1;
                                     totalrecap = totalrecap + comprat;
                                     stock_1 = stock_1 - quant;
 
                                 } else if (codipro.equals("P2")) {
                                     do {
-                                        System.out.println("Quants en vols comprar? ");
+                                        System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
-                                        sc.nextLine();
                                         if (quant > stock_2) {
-                                            System.out.println("No en queden tants, torna-ho a intentar");
+                                            System.out.println("ɴᴏ ᴇɴ ǫᴜᴇᴅᴇɴ ᴛᴀɴᴛs, ᴛᴏʀɴᴀ-ʜᴏ ᴀ ɪɴᴛᴇɴᴛᴀʀ ❗");
                                         }
                                     } while (quant > stock_2);
-                                    suma_2 = suma_2+quant;
+                                    suma_2 = suma_2 + quant;
                                     comprat = quant * preu_2;
                                     totalrecap = totalrecap + comprat;
                                     stock_2 = stock_2 - quant;
 
                                 } else if (codipro.equals("P3")) {
                                     do {
-                                        System.out.println("Quants en vols comprar? ");
+                                        System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
-                                        sc.nextLine();
                                         if (quant > stock_3) {
-                                            System.out.println("No en queden tants, torna-ho a intentar");
+                                            System.out.println("ɴᴏ ᴇɴ ǫᴜᴇᴅᴇɴ ᴛᴀɴᴛs, ᴛᴏʀɴᴀ-ʜᴏ ᴀ ɪɴᴛᴇɴᴛᴀʀ ❗");
                                         }
                                     } while (quant > stock_3);
-                                    suma_3 = suma_3+quant;
+                                    suma_3 = suma_3 + quant;
                                     comprat = quant * preu_3;
                                     totalrecap = totalrecap + comprat;
                                     stock_3 = stock_3 - quant;
 
                                 } else if (codipro.equals("P4")) {
                                     do {
-                                        System.out.println("Quants en vols comprar? ");
+                                        System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
-                                        sc.nextLine();
                                         if (quant > stock_4) {
-                                            System.out.println("No en queden tants, torna-ho a intentar");
+                                            System.out.println("ɴᴏ ᴇɴ ǫᴜᴇᴅᴇɴ ᴛᴀɴᴛs, ᴛᴏʀɴᴀ-ʜᴏ ᴀ ɪɴᴛᴇɴᴛᴀʀ ❗");
                                         }
                                     } while (quant > stock_4);
-                                    suma_4 = suma_4+quant;
+                                    suma_4 = suma_4 + quant;
                                     comprat = quant * preu_4;
                                     totalrecap = totalrecap + comprat;
                                     stock_4 = stock_4 - quant;
 
                                 } else {
-                                    System.out.println("ERROR el producte no existeix");
+                                    System.out.println("ᴇʀʀᴏʀ ᴇʟ ᴘʀᴏᴅᴜᴄᴛᴇ ɴᴏ ᴇxɪsᴛᴇɪx ❗");
                                     continue;
                                 }
-                                System.out.println("Vols continuar comprant? (SI, NO)");
+                                System.out.println("\uD835\uDC15\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC22\uD835\uDC27\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B \uD835\uDC1C\uD835\uDC28\uD835\uDC26\uD835\uDC29\uD835\uDC2B\uD835\uDC1A\uD835\uDC27\uD835\uDC2D? (\uD835\uDC12\uD835\uDC08, \uD835\uDC0D\uD835\uDC0E)");
                                 volscont = sc.nextLine();
+                                sc.nextLine();
                                 switch (volscont) {
                                     case "SI":
                                         continuar = true;
@@ -305,64 +329,106 @@ public class expendedora{
                                         continuar = false;
                                         break;
                                     default:
-                                        System.out.println("Resposta no vàlida. S'entén com a NO.");
+                                        System.out.println("ʀᴇsᴘᴏsᴛᴀ ɴᴏ ᴠᴀʟɪᴅᴀ. s'ᴇɴᴛᴇɴ ᴄᴏᴍ ᴀ ɴᴏ. ❗");
                                         continuar = false;
                                         break;
                                 }
-
-                        }while(volscont.equals("SI"));
-                        break;
+                                System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE62\uD835\uDE65\uD835\uDE67\uD835\uDE56\uD835\uDE63\uD835\uDE69 \uD835\uDE65\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68... \uD83D\uDECD\uFE0F ⌟");
+                            } while (volscont.equals("SI"));
+                            break;
+                        }else{
+                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴs ᴜɴ ᴘɪᴄ ❗");
+                            break;
+                        }
                     case 3:
-                        sc.nextLine();
-                        do {
-                            System.out.println("Introdueix el codi de producte");
-                            sc.nextLine();
-                            codipro = sc.nextLine();
-                            if (codipro.equals("P1")) {
-                                    System.out.println("Quants en vols afegir? ");
+                        if(almenys) {
+                            System.out.println("⌜ \uD835\uDC11\uD835\uDC1E\uD835\uDC28\uD835\uDC26\uD835\uDC29\uD835\uDC25\uD835\uDC22\uD835\uDC2B \uD835\uDC12\uD835\uDC2D\uD835\uDC28\uD835\uDC1C\uD835\uDC24 \uD83D\uDCE5 ⌟");
+                            do {
+                                System.out.println("Ꙇᥒtɾoᑯᥙᥱɩx ᥱꙆ ᥴoᑯɩ ᑯᥱ ρɾoᑯᥙᥴtᥱ \uD83E\uDDD1\u200D\uD83D\uDCBB: ");
+                                codipro = sc.nextLine();
+                                if (codipro.equals("P1")) {
+                                    System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥲƒᥱɠɩɾ..\uD83D\uDCAD? ");
                                     quant = sc.nextInt();
                                     sc.nextLine();
                                     stock_1 = stock_1 + quant;
-                            } else if (codipro.equals("P2")) {
-                                    System.out.println("Quants en vols afegir? ");
+                                } else if (codipro.equals("P2")) {
+                                    System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥲƒᥱɠɩɾ..\uD83D\uDCAD? ");
                                     quant = sc.nextInt();
                                     sc.nextLine();
                                     stock_2 = stock_2 + quant;
-                            } else if (codipro.equals("P3")) {
-                                    System.out.println("Quants en vols afegir? ");
+                                } else if (codipro.equals("P3")) {
+                                    System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥲƒᥱɠɩɾ..\uD83D\uDCAD? ");
                                     quant = sc.nextInt();
                                     sc.nextLine();
                                     stock_3 = stock_3 + quant;
-                            } else if (codipro.equals("P4")) {
-                                    System.out.println("Quants en vols afegir? ");
+                                } else if (codipro.equals("P4")) {
+                                    System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥲƒᥱɠɩɾ..\uD83D\uDCAD? ");
                                     quant = sc.nextInt();
                                     sc.nextLine();
                                     stock_4 = stock_4 + quant;
-                            }
-                            System.out.println("Vols continuar reomplint?");
-                            volscont = sc.nextLine();
-                        }while(volscont.equals("SI"));
-                        break;
+                                }
+                                System.out.println("\uD835\uDC15\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC22\uD835\uDC27\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B \uD835\uDC2B\uD835\uDC1E\uD835\uDC28\uD835\uDC26\uD835\uDC29\uD835\uDC25\uD835\uDC22\uD835\uDC27\uD835\uDC2D? (\uD835\uDC12\uD835\uDC08, \uD835\uDC0D\uD835\uDC0E)");
+                                volscont = sc.nextLine();
+                                System.out.println("⌜ \uD835\uDE4D\uD835\uDE5A\uD835\uDE64\uD835\uDE62\uD835\uDE65\uD835\uDE61\uD835\uDE5E\uD835\uDE63\uD835\uDE69 \uD835\uDE4E\uD835\uDE69\uD835\uDE64\uD835\uDE58\uD835\uDE60... ⌟");
+                            } while (volscont.equals("SI"));
+                            break;
+                        }else{
+                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴs ᴜɴ ᴘɪᴄ ❗");
+                            break;
+                        }
                     case 4:
-                        System.out.println("NOM DE PRODUCTE: " + nomp_1 + " " + nomp_2 +  " " + nomp_3 + " " + nomp_4 + "\n" +
-                                           "STOCK RESTANT: " + stock_1 + " " + stock_2 + " " + stock_3 + " " + stock_4 + "\n" +
-                                           "NUMERO TOTAL DE PRODUCTES VENUTS: " + " "+ (suma_1+suma_2+suma_3+suma_4) + "\n"+
-                                           "TOTAL RECAPTAT" + totalrecap );
-                        break;
+                        if(almenys) {
+                            System.out.println(
+                                    "\n" +
+                                            "██████████████████████████████████████████████████████████████\n" +
+                                            "█░░░░░░░░░░░░░░░ **INFORMES DE VENDA I RECAPTACIÓ** ░░░░░░░░░█\n" +
+                                            "█────────────────────────────────────────────────────────────█\n" +
+                                            "█                    \uD83D\uDCE6 NOM DELS PRODUCTES:                  █\n" +
+                                            "█      " + nomp_1 + "  ||  " + nomp_2 + "  ||  " + nomp_3 + "  ||  " + nomp_4 + " \n" +
+                                            "█────────────────────────────────────────────────────────────█\n" +
+                                            "█                    \uD83D\uDCCA STOCK RESTANT: ──────────────────────█\n" +
+                                            "█     " + stock_1 + " unitats || " + stock_2 + " unitats || " + stock_3 + " unitats || " + stock_4 + " unitats\n" +
+                                            "█────────────────────────────────────────────────────────────█\n" +
+                                            "█                   \uD83D\uDED2✨ TOTAL VENDUT: " + (suma_1 + suma_2 + suma_3 + suma_4) + " ✨\uD83D\uDED2" + "\n" +
+                                            "█────────────────────────────────────────────────────────────█\n" +
+                                            "█              \uD83C\uDFC6\uD83D\uDCB5 RECAPTACIÓ GLOBAL: " + totalrecap + "\uD83D\uDCB2 \uD83D\uDCB5\uD83C\uDFC6 ─────█" + "\n" +
+                                            "█────────────────────────────────────────────────────────────█\n" +
+                                            "█🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀█\n" +
+                                            "██████████████████████████████████████████████████████████████\n"
+                            );
+
+                            break;
+                        }else{
+                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴs ᴜɴ ᴘɪᴄ ❗");
+                            break;
+                        }
                     case 5:
-                        System.out.println("Sortint del programa...");
-                        System.exit(0);
+                        System.out.println("Vols sortir? (SI/NO)");
+                        String confirmacion = sc.nextLine();
+                        if (confirmacion.equalsIgnoreCase("SI")){
+                            confirmacio=false;
+                            break;
+                        }else if(confirmacion.equalsIgnoreCase("NO")){
+                            break;
+                        }
+                        else{
+                            System.out.println("ᴏᴘᴄɪᴏ ɴᴏ ᴠᴀʟɪᴅᴀ, ᴇs ᴄᴏᴍᴘᴛᴀ ᴄᴏᴍ ᴀ ɴᴏ ❗");
+                        }
                         break;
+
                     default:
-                        System.out.println("Opció no válida");
+                        System.out.println("ᴏᴘᴄɪᴏ ɴᴏ ᴠᴀʟɪᴅᴀ, ᴇs ᴄᴏᴍᴘᴛᴀ ᴄᴏᴍ ᴀ ɴᴏ ❗");
                         break;
                 }
-             }
-            }while(opcio != 5);
 
+             }
+
+
+            }while(confirmacio);
+            System.out.println("\uD835\uDC12\uD835\uDC28\uD835\uDC2B\uD835\uDC2D\uD835\uDC22\uD835\uDC27\uD835\uDC2D \uD835\uDC1D\uD835\uDC1E\uD835\uDC25 \uD835\uDC29\uD835\uDC2B\uD835\uDC28\uD835\uDC20\uD835\uDC2B\uD835\uDC1A\uD835\uDC26\uD835\uDC1A...\uD83D\uDC4B");
         }
 
-
+//4 5
 
     }
 }
