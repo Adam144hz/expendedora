@@ -129,7 +129,7 @@ public class expendedora{
             sc.nextLine();
             System.out.println("ᔑtoᥴƙ ꙆᥒɩᥴɩᥲꙆ \uD83D\uDCCB: ");
             stock = sc.nextInt();
-
+            //
             sc.nextLine();
             if(i<4) {
                 System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C\uD835\uDE6A\uD835\uDE67\uD835\uDE56\uD835\uDE63\uD835\uDE69. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68... ⚙\uFE0F ⌟");
