@@ -26,36 +26,42 @@ public class expendedora{
         int llargariapassu = 0;
         int llargariapassdos = 0;
         do {
-            while(!tedigit || !tesimbol && llargariapassu > 4){
-            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC29\uD835\uDC2B\uD835\uDC22\uD835\uDC26\uD835\uDC1E\uD835\uDC2B \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 :");
-            primernom = sc.nextLine();
-            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
-            pass = sc.nextLine();
-            for (int cont = 0; cont < pass.length(); cont++) {
-                char c = pass.charAt(cont);
-                if (Character.isDigit(c)) {
-                    tedigit = true;
+            while((!tedigit || !tesimbol || llargariapassu < 4)) {
+                System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC29\uD835\uDC2B\uD835\uDC22\uD835\uDC26\uD835\uDC1E\uD835\uDC2B \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 :");
+                primernom = sc.nextLine();
+                System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
+                pass = sc.nextLine();
+                llargariapassu = pass.length();
+                if (llargariapassu < 4) {
+                    System.out.println("ᴇs ᴍᴀssᴀ ᴄᴜʀᴛᴀ❗");
                 }
-                if (c == '@' || c == '#' || c == '%' || c == '&') {
-                    tesimbol = true;
+                tedigit = false;
+                tesimbol = false;
+                for (int cont = 0; cont < pass.length(); cont++) {
+                    char c = pass.charAt(cont);
+                    if (Character.isDigit(c)) {
+                        tedigit = true;
+                    }
+                    if (c == '@' || c == '#' || c == '%' || c == '&') {
+                        tesimbol = true;
+                    }
+                }
+                if (!tedigit || !tesimbol) {
+                    System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ᴏ ᴅɪɢɪᴛs ❗");
                 }
             }
-            if(llargariapassu < 4){
-                System.out.println("ᴇs ᴍᴀssᴀ ᴄᴜʀᴛᴀ❗");
-            }
-            if(!tedigit) {
-                System.out.println("ꜰᴀʟᴛᴇɴ ᴅɪɢɪᴛs ❗");
-             }else if(!tesimbol){
-                System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ❗");
-            }else if(!tedigit && !tesimbol){
-                System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ᴏ ᴅɪɢɪᴛs ❗");
-            }
-            }
-            while(!tedigit_u ||!tesimbol_u){
+
+            while(!tedigit_u ||!tesimbol_u || llargariapassdos < 4){
                 System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC2C\uD835\uDC1E\uD835\uDC20\uD835\uDC28\uD835\uDC27 \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 : ");
                 segonom = sc.nextLine();
                 System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
                 segonapass = sc.nextLine();
+                llargariapassdos=segonapass.length();
+                if(llargariapassdos < 4){
+                    System.out.println("ᴇs ᴍᴀssᴀ ᴄᴜʀᴛᴀ❗");
+                }
+                tedigit_u = false;
+                tesimbol_u = false;
                 for (int cont = 0; cont < segonapass.length(); cont++) {
                     char a = segonapass.charAt(cont);
                     if (Character.isDigit(a)) {
@@ -66,28 +72,23 @@ public class expendedora{
                     }
                 }
 
-            }
-            llargariapassu = pass.length();
-            llargariapassdos = segonapass.length();
-            if ((primernom.equalsIgnoreCase("admin") || segonom.equalsIgnoreCase("admin"))) {
-
-
-
-
-                if (tedigit && tedigit_u && tesimbol && tesimbol_u && llargariapassu >= 4 && llargariapassdos >= 4) {
-                    registre = true;
-                    valid = true;
-                    podemseguir = true;
-                } else{
+                if(!tedigit_u || !tesimbol_u) {
                     System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ᴏ ᴅɪɢɪᴛs ❗");
                 }
 
-            }else{
-            System.out.println("ᴜɴ ᴅᴇʟs ᴜsᴜᴀʀɪs ʜᴀ ᴅᴇ sᴇʀ ᴀᴅᴍɪɴ ❗");
-        }
+            }
+            if((primernom.equalsIgnoreCase("admin") || segonom.equalsIgnoreCase("admin"))) {
+                if(tedigit && tedigit_u && tesimbol && tesimbol_u && llargariapassu >= 4 && llargariapassdos >= 4) {
+                    registre = true;
+                    valid = true;
+                    podemseguir = true;
+                }
 
+            }else {
+                System.out.println("ᴜɴ ᴅᴇʟs ᴜsᴜᴀʀɪs ʜᴀ ᴅᴇ sᴇʀ ᴀᴅᴍɪɴ ❗");
+            }
+        }while(!valid);
 
-        }while(!valid) ;
         boolean userpremium = false;
         String nomlog;
         String passlog;
@@ -295,7 +296,7 @@ public class expendedora{
                             } while (volscont.equals("SI"));
                             break;
                         }else{
-                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴs ᴜɴ ᴘɪᴄ ❗");
+                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴʏs ᴜɴ ᴘɪᴄ ❗");
                             break;
                         }
                     case 3:
@@ -331,7 +332,7 @@ public class expendedora{
                             } while (volscont.equals("SI"));
                             break;
                         }else{
-                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴs ᴜɴ ᴘɪᴄ ❗");
+                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴʏs ᴜɴ ᴘɪᴄ ❗");
                             break;
                         }
                     case 4:
@@ -357,7 +358,7 @@ public class expendedora{
 
                             break;
                         }else{
-                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴs ᴜɴ ᴘɪᴄ ❗");
+                            System.out.println("ʜᴀs ᴅᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ᴇʟs ᴘʀᴏᴅᴜᴄᴛᴇs ᴀʟᴍᴇɴʏs ᴜɴ ᴘɪᴄ ❗");
                             break;
                         }
                     case 5:
