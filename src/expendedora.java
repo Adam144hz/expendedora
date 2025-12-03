@@ -5,8 +5,8 @@ public class expendedora{
         //Provisional !!
         System.out.println("⌜ \uD835\uDE4D\uD835\uDE5A\uD835\uDE5C\uD835\uDE5E\uD835\uDE68\uD835\uDE69\uD835\uDE67\uD835\uDE5A \uD835\uDE59'\uD835\uDE6A\uD835\uDE68\uD835\uDE6A\uD835\uDE56\uD835\uDE67\uD835\uDE5E\uD835\uDE68 \uD83D\uDCDD" + " ⌟");
         System.out.println("\uD835\uDE1C\uD835\uDE2F \uD835\uDE36\uD835\uDE34\uD835\uDE36\uD835\uDE22\uD835\uDE33\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE34\uD835\uDE26\uD835\uDE33 \uD835\uDE08\uD835\uDE25\uD835\uDE2E\uD835\uDE2A\uD835\uDE2F \uD835\uDE30\uD835\uDE23\uD835\uDE2D\uD835\uDE2A\uD835\uDE28\uD835\uDE22\uD835\uDE35\uD835\uDE30\uD835\uDE33\uD835\uDE2A\uD835\uDE22\uD835\uDE2E\uD835\uDE26\uD835\uDE2F\uD835\uDE35");
-        String primernom ="a";
-        String segonom="a";
+        String primernom ="";
+        String segonom="";
         String pass = "";
         String segonapass="a";
         boolean logedin = false;
@@ -120,14 +120,7 @@ public class expendedora{
             }
         }
         boolean hadesernum = false;
-        if(logedin){
-            if(userpremium){
-                System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
-                        "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
-            }else{
-                System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: " + nomdefi + "" + " \uD83D\uDC64" + "\n" +
-                        "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
-            }
+
             //hacer interfaz en condiciones
             String nomp_1 = "", nomp_2 = "", nomp_3 = "", nomp_4 = "";
             double preu_1 = 0, preu_2 = 0, preu_3 = 0, preu_4 = 0;
@@ -342,8 +335,8 @@ public class expendedora{
                                             "██████████████████████████████████████████████████████████████\n" +
                                             "█░░░░░░░░░░░░░░░ **INFORMES DE VENDA I RECAPTACIÓ** ░░░░░░░░░█\n" +
                                             "█────────────────────────────────────────────────────────────█\n" +
-                                            "█                    \uD83D\uDCE6 NOM DELS PRODUCTES:                  █\n" +
-                                            "█      " + nomp_1 + "  ||  " + nomp_2 + "  ||  " + nomp_3 + "  ||  " + nomp_4 + " \n" +
+                                            "█                 \uD83D\uDCE6 NOM DELS PRODUCTES:                  █\n" +
+                                            "█      "                                        + nomp_1 + "  ||  " + nomp_2 + "  ||  " + nomp_3 + "  ||  " + nomp_4 + " \n" +
                                             "█────────────────────────────────────────────────────────────█\n" +
                                             "█                    \uD83D\uDCCA STOCK RESTANT: ──────────────────────█\n" +
                                             "█     " + stock_1 + " unitats || " + stock_2 + " unitats || " + stock_3 + " unitats || " + stock_4 + " unitats\n" +
@@ -390,6 +383,6 @@ public class expendedora{
 //4 5
 
     }
-}
+
 
 // 4 caracters, digit, simbol, un ha de ser admin i s'ha de deixar preparat per introduir-ne de mes
