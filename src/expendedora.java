@@ -4,10 +4,11 @@ public class expendedora{
         Scanner sc = new Scanner(System.in);
         //Provisional !!
         System.out.println("⌜ \uD835\uDE4D\uD835\uDE5A\uD835\uDE5C\uD835\uDE5E\uD835\uDE68\uD835\uDE69\uD835\uDE67\uD835\uDE5A \uD835\uDE59'\uD835\uDE6A\uD835\uDE68\uD835\uDE6A\uD835\uDE56\uD835\uDE67\uD835\uDE5E\uD835\uDE68 \uD83D\uDCDD" + " ⌟");
-        String primernom;
-        String segonom;
+        System.out.println("\uD835\uDE1C\uD835\uDE2F \uD835\uDE36\uD835\uDE34\uD835\uDE36\uD835\uDE22\uD835\uDE33\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE34\uD835\uDE26\uD835\uDE33 \uD835\uDE08\uD835\uDE25\uD835\uDE2E\uD835\uDE2A\uD835\uDE2F \uD835\uDE30\uD835\uDE23\uD835\uDE2D\uD835\uDE2A\uD835\uDE28\uD835\uDE22\uD835\uDE35\uD835\uDE30\uD835\uDE33\uD835\uDE2A\uD835\uDE22\uD835\uDE2E\uD835\uDE26\uD835\uDE2F\uD835\uDE35");
+        String primernom ="a";
+        String segonom="a";
         String pass = "";
-        String segonapass;
+        String segonapass="a";
         boolean logedin = false;
         boolean valid = false;
         boolean registre = false;
@@ -25,28 +26,36 @@ public class expendedora{
         int llargariapassu = 0;
         int llargariapassdos = 0;
         do {
+            while(!tedigit || !tesimbol && llargariapassu > 4){
             System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC29\uD835\uDC2B\uD835\uDC22\uD835\uDC26\uD835\uDC1E\uD835\uDC2B \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 :");
             primernom = sc.nextLine();
             System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
             pass = sc.nextLine();
-            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC2C\uD835\uDC1E\uD835\uDC20\uD835\uDC28\uD835\uDC27 \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 : ");
-            segonom = sc.nextLine();
-            System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
-            segonapass = sc.nextLine();
-
-            llargariapassu = pass.length();
-            llargariapassdos = segonapass.length();
-            if ((primernom.equalsIgnoreCase("admin") || segonom.equalsIgnoreCase("admin"))) {
-                for (int cont = 0; cont < pass.length(); cont++) {
-                    char c = pass.charAt(cont);
-                    if (Character.isDigit(c)) {
-                        tedigit = true;
-                    }
-                    if (c == '@' || c == '#' || c == '%' || c == '&') {
-                        tesimbol = true;
-                    }
+            for (int cont = 0; cont < pass.length(); cont++) {
+                char c = pass.charAt(cont);
+                if (Character.isDigit(c)) {
+                    tedigit = true;
                 }
-
+                if (c == '@' || c == '#' || c == '%' || c == '&') {
+                    tesimbol = true;
+                }
+            }
+            if(llargariapassu < 4){
+                System.out.println("ᴇs ᴍᴀssᴀ ᴄᴜʀᴛᴀ❗");
+            }
+            if(!tedigit) {
+                System.out.println("ꜰᴀʟᴛᴇɴ ᴅɪɢɪᴛs ❗");
+             }else if(!tesimbol){
+                System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ❗");
+            }else if(!tedigit && !tesimbol){
+                System.out.println("ꜰᴀʟᴛᴇɴ sɪᴍʙᴏʟs ᴏ ᴅɪɢɪᴛs ❗");
+            }
+            }
+            while(!tedigit_u ||!tesimbol_u){
+                System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC1E\uD835\uDC25 \uD835\uDC2C\uD835\uDC1E\uD835\uDC20\uD835\uDC28\uD835\uDC27 \uD835\uDC2E\uD835\uDC2C\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B\uD835\uDC22 \uD835\uDC2A\uD835\uDC2E\uD835\uDC1E \uD835\uDC2F\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC2B\uD835\uDC1E\uD835\uDC20\uD835\uDC22\uD835\uDC2C\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2B \uD83D\uDD24 : ");
+                segonom = sc.nextLine();
+                System.out.println("\uD835\uDC08\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC28\uD835\uDC1D\uD835\uDC2E\uD835\uDC1E\uD835\uDC22\uD835\uDC31 \uD835\uDC25\uD835\uDC1A \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC2B\uD835\uDC1A\uD835\uDC2C\uD835\uDC2C\uD835\uDC1E\uD835\uDC27\uD835\uDC32\uD835\uDC1A \uD83D\uDD11 (\uD835\uDE29\uD835\uDE22 \uD835\uDE25\uD835\uDE26 \uD835\uDE24\uD835\uDE30\uD835\uDE2F\uD835\uDE35\uD835\uDE26\uD835\uDE2F\uD835\uDE2A\uD835\uDE33 \uD835\uDE24\uD835\uDE30\uD835\uDE2E \uD835\uDE22 \uD835\uDE2E\uD835\uDE2A\uD835\uDE2F\uD835\uDE2A\uD835\uDE2E \uD835\uDFE6 \uD835\uDE24\uD835\uDE22\uD835\uDE33\uD835\uDE22\uD835\uDE24\uD835\uDE35\uD835\uDE26\uD835\uDE33\uD835\uDE34 \uD835\uDE26\uD835\uDE2F\uD835\uDE35\uD835\uDE33\uD835\uDE26 \uD835\uDE26\uD835\uDE2D\uD835\uDE34 \uD835\uDE32\uD835\uDE36\uD835\uDE22\uD835\uDE2D\uD835\uDE34 \uD835\uDE29\uD835\uDE2A \uD835\uDE29\uD835\uDE22 \uD835\uDE25'\uD835\uDE29\uD835\uDE22\uD835\uDE37\uD835\uDE26\uD835\uDE33 \uD835\uDE36\uD835\uDE2F \uD835\uDE25\uD835\uDE2A\uD835\uDE28\uD835\uDE2A\uD835\uDE35 \uD835\uDE2A \uD835\uDE36\uD835\uDE2F \uD835\uDE34\uD835\uDE2A\uD835\uDE2E\uD835\uDE23\uD835\uDE30\uD835\uDE2D) : ");
+                segonapass = sc.nextLine();
                 for (int cont = 0; cont < segonapass.length(); cont++) {
                     char a = segonapass.charAt(cont);
                     if (Character.isDigit(a)) {
@@ -56,6 +65,14 @@ public class expendedora{
                         tesimbol_u = true;
                     }
                 }
+
+            }
+            llargariapassu = pass.length();
+            llargariapassdos = segonapass.length();
+            if ((primernom.equalsIgnoreCase("admin") || segonom.equalsIgnoreCase("admin"))) {
+
+
+
 
                 if (tedigit && tedigit_u && tesimbol && tesimbol_u && llargariapassu >= 4 && llargariapassdos >= 4) {
                     registre = true;
@@ -103,7 +120,6 @@ public class expendedora{
         }
         boolean hadesernum = false;
         if(logedin){
-            System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68 \uD83C\uDFF7\uFE0F ⌟");
             if(userpremium){
                 System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
                         "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈");
@@ -120,53 +136,7 @@ public class expendedora{
             double preu = 0;
             int stock = 0;
             String codipro_1 = "", codipro_2 = "", codipro_3 = "", codipro_4 = "";
-            for(int i = 1; i <=4; i++){
-            System.out.println("ᕈɾoᑯᥙᥴtᥱ " + i + " " + "(ᕈ" + i + ") \uD83D\uDCE6");
-            System.out.println("ᙁoຕ: ");
-            nom = sc.nextLine();
-            System.out.println("ᕈɾᥱᥙ \uD83D\uDCB2:");
-            preu = sc.nextDouble();
-            sc.nextLine();
-            System.out.println("ᔑtoᥴƙ ꙆᥒɩᥴɩᥲꙆ \uD83D\uDCCB: ");
-            stock = sc.nextInt();
-            ///
-            sc.nextLine();
-            if(i<4) {
-                System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C\uD835\uDE6A\uD835\uDE67\uD835\uDE56\uD835\uDE63\uD835\uDE69. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68... ⚙\uFE0F ⌟");
-            }
-                switch (i){
-                    case 1:
-                        nomp_1 = nom;
-                        preu_1=preu;
-                        stock_1=stock;
-                        codipro_1 = "P1";
-                    break;
-
-                    case 2:
-                        nomp_2 = nom;
-                        preu_2=preu;
-                        stock_2=stock;
-                        codipro_2 = "P2";
-                        break;
-
-                    case 3:
-                        nomp_3 = nom;
-                        preu_3=preu;
-                        stock_3=stock;
-                        codipro_3 = "P3";
-                        break;
-
-                    case 4:
-                        nomp_4 = nom;
-                        preu_4=preu;
-                        stock_4=stock;
-                        codipro_4 = "P4";
-                        break;
-                }
-
-            }
-
-        double totalrecap = 0;
+            double totalrecap = 0;
             boolean confirmacio = true;
             do{
                 System.out.println("⌜ \uD835\uDE48\uD835\uDE40\uD835\uDE49\uD835\uDE50 \uD835\uDE4B\uD835\uDE4D\uD835\uDE44\uD835\uDE49\uD835\uDE3E\uD835\uDE44\uD835\uDE4B\uD835\uDE3C\uD835\uDE47 \uD83D\uDCDC ⌟");
@@ -202,6 +172,7 @@ public class expendedora{
                  String volscont = "";
                  switch (opcio){
                     case 1:
+                        System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE63\uD835\uDE5B\uD835\uDE5E\uD835\uDE5C. \uD835\uDE4B\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68 \uD83C\uDFF7\uFE0F ⌟");
                         almenys=true;
                         if(userpremium){
                             System.out.println("\uD835\uDE84\uD835\uDE9C\uD835\uDE8E\uD835\uDE9B: Admin ♛" + "\n" +
@@ -262,7 +233,7 @@ public class expendedora{
                             do {
                                 System.out.println("Ꙇᥒtɾoᑯᥙᥱɩx ᥱꙆ ᥴoᑯɩ ᑯᥱ ρɾoᑯᥙᥴtᥱ \uD83E\uDDD1\u200D\uD83D\uDCBB: ");
                                 codipro = sc.nextLine();
-                                if (codipro.equals("P1")) {
+                                if (codipro.equalsIgnoreCase("P1")) {
                                     do {
                                         System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
@@ -275,7 +246,7 @@ public class expendedora{
                                     totalrecap = totalrecap + comprat;
                                     stock_1 = stock_1 - quant;
 
-                                } else if (codipro.equals("P2")) {
+                                } else if (codipro.equalsIgnoreCase("P2")) {
                                     do {
                                         System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
@@ -288,7 +259,7 @@ public class expendedora{
                                     totalrecap = totalrecap + comprat;
                                     stock_2 = stock_2 - quant;
 
-                                } else if (codipro.equals("P3")) {
+                                } else if (codipro.equalsIgnoreCase("P3")) {
                                     do {
                                         System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
@@ -301,7 +272,7 @@ public class expendedora{
                                     totalrecap = totalrecap + comprat;
                                     stock_3 = stock_3 - quant;
 
-                                } else if (codipro.equals("P4")) {
+                                } else if (codipro.equalsIgnoreCase("P4")) {
                                     do {
                                         System.out.println("ᕋᥙᥲᥒt⳽ ᥱᥒ ʋoꙆ⳽ ᥴoຕρɾᥲɾ..\uD83D\uDCAD? ");
                                         quant = sc.nextInt();
@@ -319,21 +290,8 @@ public class expendedora{
                                     continue;
                                 }
                                 System.out.println("\uD835\uDC15\uD835\uDC28\uD835\uDC25\uD835\uDC2C \uD835\uDC1C\uD835\uDC28\uD835\uDC27\uD835\uDC2D\uD835\uDC22\uD835\uDC27\uD835\uDC2E\uD835\uDC1A\uD835\uDC2B \uD835\uDC1C\uD835\uDC28\uD835\uDC26\uD835\uDC29\uD835\uDC2B\uD835\uDC1A\uD835\uDC27\uD835\uDC2D? (\uD835\uDC12\uD835\uDC08, \uD835\uDC0D\uD835\uDC0E)");
-                                volscont = sc.nextLine();
                                 sc.nextLine();
-                                switch (volscont) {
-                                    case "SI":
-                                        continuar = true;
-                                        break;
-                                    case "NO":
-                                        continuar = false;
-                                        break;
-                                    default:
-                                        System.out.println("ʀᴇsᴘᴏsᴛᴀ ɴᴏ ᴠᴀʟɪᴅᴀ. s'ᴇɴᴛᴇɴ ᴄᴏᴍ ᴀ ɴᴏ. ❗");
-                                        continuar = false;
-                                        break;
-                                }
-                                System.out.println("⌜ \uD835\uDE3E\uD835\uDE64\uD835\uDE62\uD835\uDE65\uD835\uDE67\uD835\uDE56\uD835\uDE63\uD835\uDE69 \uD835\uDE65\uD835\uDE67\uD835\uDE64\uD835\uDE59\uD835\uDE6A\uD835\uDE58\uD835\uDE69\uD835\uDE5A\uD835\uDE68... \uD83D\uDECD\uFE0F ⌟");
+                                volscont = sc.nextLine();
                             } while (volscont.equals("SI"));
                             break;
                         }else{
